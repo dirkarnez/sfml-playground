@@ -5,18 +5,7 @@ cmake_minimum_required(VERSION 3.14)
 
 project(sfml-boilerplate)
 
-set(BUILD_SHARED_LIBS FALSE)
-# set(SFML_BUILD_AUDIO FALSE)
-# set(SFML_BUILD_DOC FALSE)
-# set(SFML_BUILD_EXAMPLES FALSE)
-# set(SFML_BUILD_GRAPHICS TRUE)
-# set(SFML_BUILD_NETWORK FALSE)
-# set(SFML_BUILD_TEST_SUITE FALSE)
-# set(SFML_BUILD_WINDOW TRUE)
-# set(SFML_INSTALL_PKGCONFIG_FILES FALSE)
-# set(SFML_USE_STATIC_STD_LIBS FALSE)
-set(SFML_USE_SYSTEM_DEPS FALSE)
-set(SFML_STATIC_LIBRARIES TRUE)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
 # find_package(OpenGL REQUIRED)
 # if (OPENGL_FOUND)
@@ -34,9 +23,7 @@ set(SFML_STATIC_LIBRARIES TRUE)
 # find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED PATHS "SFML-prebuilt/build/sfml/lib/cmake/SFML")
 # find_package(SFML 2.5.0 COMPONENTS Graphics Window System REQUIRED PATHS "P:\\Downloads\\cpp-libraries\\SFML\\build")
 
-find_package(SFML 2.5.1 COMPONENTS system window graphics REQUIRED PATHS 
-    "sfml-v2.5.1-mingw/SFML/build/sfml/lib/cmake/SFML"
-)
+find_package(SFML 2.5.1 COMPONENTS system window graphics REQUIRED)
 
 # uncomment this line if using msvc
 # SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /subsystem:windows /ENTRY:mainCRTStartup")
