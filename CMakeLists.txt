@@ -5,14 +5,15 @@ cmake_minimum_required(VERSION 3.14)
 
 project(sfml-boilerplate)
 
-
-
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
 
 set(SFML_STATIC_LIBRARIES TRUE)
+# [find_package — CMake 3.0.2 Documentation](https://cmake.org/cmake/help/v3.0/command/find_package.html)
+# method A: CMAKE_PREFIX_PATH / CMAKE_FRAMEWORK_PATH / CMAKE_APPBUNDLE_PATH
 list(APPEND CMAKE_PREFIX_PATH "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
-
+# or <package>_DIR
+set(SFML_DIR "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
 
 
 
