@@ -1,9 +1,9 @@
 REM run as Administrator
 @echo off
 cd /d %~dp0
-set DOWNLOAD_DIR=%USERPROFILE%\Downloads
-set DOWNLOAD_DIR_LINUX=%DOWNLOAD_DIR:\=/%
-SET PATH=%DOWNLOAD_DIR%\PortableGit\bin;%DOWNLOAD_DIR%\mingw64-win32;%DOWNLOAD_DIR%\mingw64-win32\bin;%DOWNLOAD_DIR%\cmake-3.22.2-windows-x86_64\bin;P:\Downloads\gopath\src\github.com\dirkarnez\cpk
+@REM set DOWNLOAD_DIR=%USERPROFILE%\Downloads
+@REM set DOWNLOAD_DIR_LINUX=%DOWNLOAD_DIR:\=/%
+@REM SET PATH=%DOWNLOAD_DIR%\PortableGit\bin;%DOWNLOAD_DIR%\mingw64-win32;%DOWNLOAD_DIR%\mingw64-win32\bin;%DOWNLOAD_DIR%\cmake-3.22.2-windows-x86_64\bin;P:\Downloads\gopath\src\github.com\dirkarnez\cpk
 
 set USER_NAME=dirkarnez
 

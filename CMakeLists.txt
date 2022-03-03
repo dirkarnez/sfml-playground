@@ -5,7 +5,18 @@ cmake_minimum_required(VERSION 3.14)
 
 project(sfml-boilerplate)
 
+
+
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
+
+
+set(SFML_STATIC_LIBRARIES TRUE)
+list(APPEND CMAKE_PREFIX_PATH "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
+
+
+
+
+
 
 # find_package(OpenGL REQUIRED)
 # if (OPENGL_FOUND)
