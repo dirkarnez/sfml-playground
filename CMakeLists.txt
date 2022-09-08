@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14)
 # set(glfw_ROOT "P:/Downloads/cpp-libraries/glfw-3.3.6.bin.WIN64")
 # set(glad2_ROOT "P:/Downloads/cpp-libraries/glad2-web-generated")
 
-project(sfml-boilerplate)
+project(sfml-playground)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
