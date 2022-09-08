@@ -5,16 +5,16 @@ cmake_minimum_required(VERSION 3.14)
 
 project(sfml-playground)
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
+# list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
 
 set(SFML_STATIC_LIBRARIES TRUE)
-# [find_package — CMake 3.0.2 Documentation](https://cmake.org/cmake/help/v3.0/command/find_package.html)
-# method A: CMAKE_PREFIX_PATH / CMAKE_FRAMEWORK_PATH / CMAKE_APPBUNDLE_PATH
-list(APPEND CMAKE_PREFIX_PATH "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
-# or <package>_DIR
-set(SFML_DIR "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
 
+# # [find_package — CMake 3.0.2 Documentation](https://cmake.org/cmake/help/v3.0/command/find_package.html)
+# # method A: CMAKE_PREFIX_PATH / CMAKE_FRAMEWORK_PATH / CMAKE_APPBUNDLE_PATH
+# list(APPEND CMAKE_PREFIX_PATH "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
+# # or <package>_DIR
+# set(SFML_DIR "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\\sfml\\lib\\cmake\\SFML")
 
 
 
@@ -35,7 +35,7 @@ set(SFML_DIR "D:\\Softwares\\cpk\\cpp-prebuilts\\sfml-v2.5.1-mingw\\SFML\\build\
 # find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED PATHS "SFML-prebuilt/build/sfml/lib/cmake/SFML")
 # find_package(SFML 2.5.0 COMPONENTS Graphics Window System REQUIRED PATHS "P:\\Downloads\\cpp-libraries\\SFML\\build")
 
-find_package(SFML 2.5.1 COMPONENTS system window graphics REQUIRED)
+find_package(SFML 2.5.1 EXACT COMPONENTS system window graphics REQUIRED)
 
 # uncomment this line if using msvc
 # SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /subsystem:windows /ENTRY:mainCRTStartup")
