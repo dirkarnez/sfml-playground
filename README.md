@@ -8,4 +8,5 @@ sfml-playground
 - [dirkarnez/sfml-prebuilt](https://github.com/dirkarnez/sfml-prebuilt)
 
 ### Reference
+- [SFML/cmake-sfml-project: Repository template for SFML projects using CMake](https://github.com/SFML/cmake-sfml-project)
 - https://github.com/SFML/SFML/blob/master/examples/win32/Win32.cpp
